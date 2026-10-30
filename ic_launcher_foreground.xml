@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Distillation Column Silhouette & Pressure Gauge Dial -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M34,26 C34,21.58 37.58,18 42,18 C46.42,18 50,21.58 50,26 L50,82 L34,82 Z" />
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M36,34 L48,34 L48,37 L36,37 Z M36,46 L48,46 L48,49 L36,49 Z M36,58 L48,58 L48,61 L36,61 Z M36,70 L48,70 L48,73 L36,73 Z" />
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M50,32 L66,32 L66,46 L62,46 L62,36 L50,36 Z" />
+    <!-- Pressure Gauge Circle -->
+    <path
+        android:fillColor="#F8FAFC"
+        android:pathData="M64,46 A16,16 0 1,1 63.99,46 Z" />
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M64,50 A12,12 0 1,1 63.99,50 Z" />
+    <!-- Gauge Needle in Amber -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M62,63 L72,53 L75,56 L65,66 Z" />
+    <!-- Base platform -->
+    <path
+        android:fillColor="#94A3B8"
+        android:pathData="M28,82 L80,82 L80,87 L28,87 Z" />
+</vector>

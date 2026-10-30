@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PetroLog 24H</string>
+    <string name="section_title">COLONNES, BALLONS, REBOUILLEURS &amp; POMPES</string>
+    <string name="plant_subtitle">Relevés Quotidiens Opérateur — Unité de Fractionnement</string>
+    <string name="tab_entry">Saisie Terrain</string>
+    <string name="tab_summary_24h">Tableau 24H</string>
+    <string name="shift_header_title">En-tête de Poste &amp; Opérateurs</string>
+    <string name="day_shift_label">Quart de Jour (08H00 – 20H00)</string>
+    <string name="night_shift_label">Quart de Nuit (20H00 – 08H00)</string>
+    <string name="operator_name_label">Nom de l\'opérateur</string>
+    <string name="operator_signature_label">Visa / Signature</string>
+    <string name="search_placeholder">Rechercher par TAG (ex: PG1273) ou équipement…</string>
+    <string name="checkbox_na_stopped">En arrêt / N/A</string>
+    <string name="value_label">Valeur</string>
+    <string name="export_csv_button">Exporter CSV (Excel)</string>
+    <string name="export_pdf_button">Rapport PDF 24H</string>
+    <string name="share_text_button">Résumé Texte</string>
+    <string name="edit_slot_time_title">Modifier l\'intitulé du créneau horaire</string>
+    <string name="save_action">Enregistrer</string>
+    <string name="cancel_action">Annuler</string>
+    <string name="offline_saved_badge">Sauvegarde locale auto (Hors-ligne)</string>
+</resources>

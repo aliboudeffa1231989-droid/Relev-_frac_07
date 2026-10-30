@@ -1,0 +1,6 @@
+{
+  "name": "PetroLog 24H",
+  "description": "Application industrielle de saisie quotidienne des relevés 24H (Colonnes, Ballons, Rebouilleurs & Pompes) avec sauvegarde hors-ligne Room, tableau récapitulatif 24H et export CSV/PDF.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
