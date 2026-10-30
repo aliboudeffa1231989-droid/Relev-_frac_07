@@ -1,0 +1,40 @@
+name: Compiler APK Android
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code du projet
+        uses: actions/checkout@v4
+
+      - name: Installer Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Compiler l'application en APK
+        run: |
+          # Si vous avez importé le fichier .zip, il l'extrait automatiquement
+          if ls *.zip 1> /dev/null 2>&1; then
+            unzip -o *.zip -d extracted_app
+            cd extracted_app
+          fi
+          # Cherche le fichier gradlew où qu'il soit dans vos dossiers
+          GRADLEW_PATH=$(find . -name "gradlew" | head -n 1)
+          PROJECT_DIR=$(dirname "$GRADLEW_PATH")
+          cd "$PROJECT_DIR"
+          chmod +x gradlew
+          ./gradlew assembleDebug
+          mkdir -p $GITHUB_WORKSPACE/apk_pret
+          find . -name "app-debug.apk" -exec cp {} $GITHUB_WORKSPACE/apk_pret/ \;
+
+      - name: Préparer le téléchargement de l'APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Application-Releves-APK
+          path: apk_pret/app-debug.apk
